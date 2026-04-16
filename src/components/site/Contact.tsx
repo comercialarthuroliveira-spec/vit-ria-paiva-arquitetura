@@ -1,4 +1,4 @@
-const WHATSAPP = "https://wa.me/5562999999999?text=Ol%C3%A1%20Vit%C3%B3ria%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20arquitetura.";
+const WHATSAPP = "https://wa.me/5562984287873?text=Ol%C3%A1%20Vit%C3%B3ria%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20arquitetura.";
 const INSTAGRAM = "https://www.instagram.com/vitoryapaivaarquitetura/";
 const INSTAGRAM_HANDLE = "@vitoryapaivaarquitetura";
 
@@ -40,7 +40,7 @@ export const Contact = () => {
           <div className="mx-auto mt-20 grid max-w-3xl grid-cols-1 gap-8 border-t border-border pt-12 text-left md:grid-cols-3">
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">WhatsApp</p>
-              <a href={WHATSAPP} className="mt-2 block font-serif text-xl hover:text-stone">(62) 9 9999-9999</a>
+              <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="mt-2 block font-serif text-xl hover:text-stone">(62) 98428-7873</a>
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Instagram</p>
