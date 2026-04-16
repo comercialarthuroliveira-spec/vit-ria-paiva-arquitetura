@@ -63,6 +63,15 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        serif: ["Cormorant Garamond", "Georgia", "serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
+      },
+      colors: {
+        beige: "hsl(var(--beige))",
+        nude: "hsl(var(--nude))",
+        stone: "hsl(var(--stone))",
+      } as any,
       keyframes: {
         "accordion-down": {
           from: {
