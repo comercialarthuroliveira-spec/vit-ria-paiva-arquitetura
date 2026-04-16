@@ -28,8 +28,7 @@ export const Services = () => {
                 key={s.n}
                 className="group grid grid-cols-12 gap-4 border-t border-border py-8 transition-colors last:border-b hover:bg-background/60"
               >
-                <span className="col-span-2 font-serif text-sm text-muted-foreground md:col-span-1">{s.n}</span>
-                <h3 className="col-span-10 font-serif text-2xl md:col-span-4 md:text-3xl">{s.title}</h3>
+                <h3 className="col-span-12 font-serif text-2xl md:col-span-5 md:text-3xl">{s.title}</h3>
                 <p className="col-span-12 text-sm leading-relaxed text-muted-foreground md:col-span-7 md:text-base">
                   {s.desc}
                 </p>
