@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo-vitorya-paiva.png";
 
 const links = [
   { href: "#sobre", label: "Sobre" },
@@ -29,13 +28,9 @@ export const Navbar = () => {
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-12">
-        <a href="#top" className="flex items-center" aria-label="Vitórya Paiva — Arquitetura e Urbanismo">
-          <img
-            src={logo}
-            alt="Vitórya Paiva Arquitetura e Urbanismo"
-            className="h-12 w-auto md:h-14"
-            loading="eager"
-          />
+        <a href="#top" className="font-serif text-lg tracking-tight md:text-xl">
+          Vitória Paiva
+          <span className="ml-2 text-xs uppercase tracking-[0.3em] text-muted-foreground">Arquitetura</span>
         </a>
 
         <ul className="hidden items-center gap-10 md:flex">
