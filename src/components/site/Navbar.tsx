@@ -30,7 +30,7 @@ export const Navbar = () => {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-12">
         <a href="#top" className="font-serif text-lg tracking-tight md:text-xl">
           Vitória Paiva
-          <span className="ml-2 text-xs uppercase tracking-[0.3em] text-muted-foreground">Arquitetura</span>
+          <span className="ml-2 text-xs uppercase tracking-[0.3em] text-muted-foreground">· Arquitetura &amp; Interiores</span>
         </a>
 
         <ul className="hidden items-center gap-10 md:flex">
