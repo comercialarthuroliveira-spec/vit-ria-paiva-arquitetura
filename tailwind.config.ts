@@ -57,6 +57,9 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        beige: "hsl(var(--beige))",
+        nude: "hsl(var(--nude))",
+        stone: "hsl(var(--stone))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,11 +70,6 @@ export default {
         serif: ["Cormorant Garamond", "Georgia", "serif"],
         sans: ["Inter", "system-ui", "sans-serif"],
       },
-      colors: {
-        beige: "hsl(var(--beige))",
-        nude: "hsl(var(--nude))",
-        stone: "hsl(var(--stone))",
-      } as any,
       keyframes: {
         "accordion-down": {
           from: {
