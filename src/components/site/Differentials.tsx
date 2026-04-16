@@ -17,10 +17,9 @@ export const Differentials = () => {
         </h2>
 
         <div className="mt-16 grid grid-cols-1 gap-px bg-background/15 md:grid-cols-2 lg:grid-cols-3">
-          {items.map((it, i) => (
+          {items.map((it) => (
             <div key={it.title} className="bg-foreground p-8 transition-colors hover:bg-stone md:p-10">
-              <p className="font-serif text-sm text-background/50">0{i + 1}</p>
-              <h3 className="mt-6 font-serif text-2xl text-background md:text-3xl">{it.title}</h3>
+              <h3 className="font-serif text-2xl text-background md:text-3xl">{it.title}</h3>
               <p className="mt-4 text-sm leading-relaxed text-background/70">{it.desc}</p>
             </div>
           ))}
