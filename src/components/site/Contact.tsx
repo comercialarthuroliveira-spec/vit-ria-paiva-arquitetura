@@ -1,5 +1,6 @@
 const WHATSAPP = "https://wa.me/5562999999999?text=Ol%C3%A1%20Vit%C3%B3ria%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20arquitetura.";
-const INSTAGRAM = "https://instagram.com/vitoriapaiva.arq";
+const INSTAGRAM = "https://www.instagram.com/vitoryapaivaarquitetura/";
+const INSTAGRAM_HANDLE = "@vitoryapaivaarquitetura";
 
 export const Contact = () => {
   return (
@@ -32,7 +33,7 @@ export const Contact = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-2 py-5 text-xs uppercase tracking-[0.25em] underline-offset-8 hover:underline"
             >
-              @vitoriapaiva.arq
+              {INSTAGRAM_HANDLE}
             </a>
           </div>
 
@@ -43,7 +44,7 @@ export const Contact = () => {
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Instagram</p>
-              <a href={INSTAGRAM} className="mt-2 block font-serif text-xl hover:text-stone">@vitoriapaiva.arq</a>
+              <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" className="mt-2 block font-serif text-xl hover:text-stone">{INSTAGRAM_HANDLE}</a>
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Localização</p>
