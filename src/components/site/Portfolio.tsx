@@ -6,6 +6,15 @@ import gramado3 from "@/assets/portfolio-gramado-3.jpg";
 import recanto1 from "@/assets/portfolio-recanto-1.jpg";
 import recanto2 from "@/assets/portfolio-recanto-2.jpg";
 import guiLucas1 from "@/assets/portfolio-gui-lucas-1.jpg";
+import guiLucas2 from "@/assets/portfolio-gui-lucas-2.jpg";
+import mpCozinha from "@/assets/portfolio-mp-cozinha.jpg";
+import mpLavanderia from "@/assets/portfolio-mp-lavanderia.jpg";
+import lavaboArte from "@/assets/portfolio-lavabo-arte.jpg";
+import lavaboVerde from "@/assets/portfolio-lavabo-verde.jpg";
+import banhoPedras from "@/assets/portfolio-banho-pedras.jpg";
+import banhoPedras2 from "@/assets/portfolio-banho-pedras-2.jpg";
+import cozinhaVerde from "@/assets/portfolio-cozinha-verde.jpg";
+import livingIntegrado from "@/assets/portfolio-living-integrado.jpg";
 
 type Cat = "Todos" | "Residencial" | "Comercial" | "Interiores";
 
@@ -16,6 +25,15 @@ const projects: { src: string; title: string; cat: Exclude<Cat, "Todos">; tall?:
   { src: recanto1, title: "Apê Recanto — Living", cat: "Interiores", tall: true },
   { src: recanto2, title: "Apê Recanto — Cozinha", cat: "Interiores" },
   { src: guiLucas1, title: "Apê Gui e Lucas — Jantar", cat: "Residencial" },
+  { src: guiLucas2, title: "Apê Gui e Lucas — Sala Integrada", cat: "Residencial", tall: true },
+  { src: mpCozinha, title: "Projeto M|P — Cozinha", cat: "Interiores" },
+  { src: mpLavanderia, title: "Projeto M|P — Lavanderia", cat: "Interiores" },
+  { src: lavaboArte, title: "Lavabo Autoral", cat: "Interiores" },
+  { src: lavaboVerde, title: "Lavabo Mármore Verde", cat: "Interiores" },
+  { src: banhoPedras, title: "Banho Texturas", cat: "Interiores", tall: true },
+  { src: banhoPedras2, title: "Banho Casal", cat: "Interiores" },
+  { src: cozinhaVerde, title: "Cozinha Verde Sage", cat: "Interiores" },
+  { src: livingIntegrado, title: "Living Integrado", cat: "Residencial" },
 ];
 
 const cats: Cat[] = ["Todos", "Residencial", "Comercial", "Interiores"];
