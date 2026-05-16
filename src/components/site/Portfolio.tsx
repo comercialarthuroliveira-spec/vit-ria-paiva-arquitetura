@@ -15,6 +15,9 @@ import banhoPedras from "@/assets/portfolio-banho-pedras.jpg";
 import banhoPedras2 from "@/assets/portfolio-banho-pedras-2.jpg";
 import cozinhaVerde from "@/assets/portfolio-cozinha-verde.jpg";
 import livingIntegrado from "@/assets/portfolio-living-integrado.jpg";
+import nogal1 from "@/assets/portfolio-nogal-1.jpg";
+import nogal2 from "@/assets/portfolio-nogal-2.jpg";
+import nogal3 from "@/assets/portfolio-nogal-3.jpg";
 
 type Cat = "Todos" | "Residencial" | "Comercial" | "Interiores";
 
@@ -34,6 +37,9 @@ const projects: { src: string; title: string; cat: Exclude<Cat, "Todos">; tall?:
   { src: banhoPedras2, title: "Banho Casal", cat: "Interiores" },
   { src: cozinhaVerde, title: "Cozinha Verde Sage", cat: "Interiores" },
   { src: livingIntegrado, title: "Living Integrado", cat: "Residencial" },
+  { src: nogal1, title: "Apê Nogal — Cozinha Gourmet", cat: "Interiores", tall: true },
+  { src: nogal2, title: "Apê Nogal — Ilha Central", cat: "Interiores" },
+  { src: nogal3, title: "Apê Nogal — Bancada", cat: "Interiores" },
 ];
 
 const cats: Cat[] = ["Todos", "Residencial", "Comercial", "Interiores"];
