@@ -1,21 +1,21 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import r1 from "@/assets/portfolio-residential-1.jpg";
-import r2 from "@/assets/portfolio-residential-2.jpg";
-import r3 from "@/assets/portfolio-residential-3.jpg";
-import c1 from "@/assets/portfolio-commercial-1.jpg";
-import i1 from "@/assets/portfolio-interior-1.jpg";
-import i2 from "@/assets/portfolio-interior-2.jpg";
+import gramado1 from "@/assets/portfolio-gramado-1.jpg";
+import gramado2 from "@/assets/portfolio-gramado-2.jpg";
+import gramado3 from "@/assets/portfolio-gramado-3.jpg";
+import recanto1 from "@/assets/portfolio-recanto-1.jpg";
+import recanto2 from "@/assets/portfolio-recanto-2.jpg";
+import guiLucas1 from "@/assets/portfolio-gui-lucas-1.jpg";
 
 type Cat = "Todos" | "Residencial" | "Comercial" | "Interiores";
 
 const projects: { src: string; title: string; cat: Exclude<Cat, "Todos">; tall?: boolean }[] = [
-  { src: r1, title: "Residência Jardins", cat: "Residencial", tall: true },
-  { src: i2, title: "Cozinha Setor Bueno", cat: "Interiores" },
-  { src: r2, title: "Suíte Master", cat: "Residencial" },
-  { src: c1, title: "Boutique Marista", cat: "Comercial", tall: true },
-  { src: i1, title: "Home Office Park Lozandes", cat: "Interiores" },
-  { src: r3, title: "Fachada Alphaville", cat: "Residencial" },
+  { src: gramado1, title: "Apê Gramado — Sala de Jantar", cat: "Residencial", tall: true },
+  { src: gramado2, title: "Apê Gramado — Cozinha", cat: "Interiores" },
+  { src: gramado3, title: "Apê Gramado — Estar", cat: "Residencial" },
+  { src: recanto1, title: "Apê Recanto — Living", cat: "Interiores", tall: true },
+  { src: recanto2, title: "Apê Recanto — Cozinha", cat: "Interiores" },
+  { src: guiLucas1, title: "Apê Gui e Lucas — Jantar", cat: "Residencial" },
 ];
 
 const cats: Cat[] = ["Todos", "Residencial", "Comercial", "Interiores"];
