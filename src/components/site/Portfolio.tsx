@@ -77,25 +77,18 @@ export const Portfolio = () => {
           </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          {list.map((p, idx) => (
+        <div className="mt-16 columns-1 gap-6 md:columns-2 lg:columns-3 lg:gap-8">
+          {list.map((p) => (
             <figure
               key={p.title}
-              className={cn(
-                "group overflow-hidden",
-                p.tall ? "lg:row-span-2" : "",
-                idx === 0 && "md:col-span-2 lg:col-span-1"
-              )}
+              className="group mb-6 break-inside-avoid overflow-hidden lg:mb-8"
             >
               <div className="relative overflow-hidden bg-muted">
                 <img
                   src={p.src}
                   alt={`${p.title} — projeto de ${p.cat.toLowerCase()} em Goiânia`}
                   loading="lazy"
-                  className={cn(
-                    "image-zoom w-full object-cover",
-                    p.tall ? "h-[640px]" : "h-[420px]"
-                  )}
+                  className="image-zoom w-full object-cover"
                 />
               </div>
               <figcaption className="mt-4 flex items-baseline justify-between">
