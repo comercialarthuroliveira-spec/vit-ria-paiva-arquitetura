@@ -19,7 +19,7 @@ import nogal1 from "@/assets/portfolio-nogal-1.jpg";
 import nogal2 from "@/assets/portfolio-nogal-2.jpg";
 import nogal3 from "@/assets/portfolio-nogal-3.jpg";
 
-type Cat = "Todos" | "Residencial" | "Comercial" | "Interiores";
+type Cat = "Residencial" | "Comercial" | "Interiores";
 
 const projects: { src: string; title: string; cat: Exclude<Cat, "Todos">; tall?: boolean }[] = [
   { src: gramado1, title: "Apê Gramado — Sala de Jantar", cat: "Residencial", tall: true },
