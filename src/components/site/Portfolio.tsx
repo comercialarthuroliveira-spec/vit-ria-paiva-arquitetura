@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import gramado1 from "@/assets/portfolio-gramado-1.jpg";
 import gramado2 from "@/assets/portfolio-gramado-2.jpg";
 import gramado3 from "@/assets/portfolio-gramado-3.jpg";
@@ -75,10 +76,9 @@ export const Portfolio = () => {
         {/* Masonry */}
         <div className="columns-1 gap-8 space-y-8 md:columns-2 md:gap-10 md:space-y-10 lg:columns-3">
           {projects.map((p, i) => (
-            <>
+            <Fragment key={p.title + i}>
               {i === PHILOSOPHY_INDEX && (
                 <div
-                  key="philosophy"
                   className="break-inside-avoid bg-[#e8e4dd] p-10 md:p-12 flex flex-col justify-center md:h-[400px]"
                 >
                   <h3
@@ -93,8 +93,8 @@ export const Portfolio = () => {
                   </p>
                 </div>
               )}
-              <ProjectCard key={p.title + i} project={p} index={i} />
-            </>
+              <ProjectCard project={p} index={i} />
+            </Fragment>
           ))}
         </div>
 
