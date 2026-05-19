@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { cn } from "@/lib/utils";
 import gramado1 from "@/assets/portfolio-gramado-1.jpg";
 import gramado2 from "@/assets/portfolio-gramado-2.jpg";
@@ -19,7 +18,7 @@ import nogal1 from "@/assets/portfolio-nogal-1.jpg";
 import nogal2 from "@/assets/portfolio-nogal-2.jpg";
 import nogal3 from "@/assets/portfolio-nogal-3.jpg";
 
-type Cat = "Todos" | "Residencial" | "Comercial" | "Interiores";
+type Cat = "Residencial" | "Comercial" | "Interiores";
 
 const projects: { src: string; title: string; cat: Exclude<Cat, "Todos">; tall?: boolean }[] = [
   { src: gramado1, title: "Apê Gramado — Sala de Jantar", cat: "Residencial", tall: true },
@@ -42,11 +41,8 @@ const projects: { src: string; title: string; cat: Exclude<Cat, "Todos">; tall?:
   { src: nogal3, title: "Apê Nogal — Bancada", cat: "Interiores" },
 ];
 
-const cats: Cat[] = ["Todos", "Residencial", "Comercial", "Interiores"];
-
 export const Portfolio = () => {
-  const [active, setActive] = useState<Cat>("Todos");
-  const list = active === "Todos" ? projects : projects.filter((p) => p.cat === active);
+  const list = projects;
 
   return (
     <section id="portfolio" className="bg-background py-28 md:py-40">
@@ -57,23 +53,6 @@ export const Portfolio = () => {
             <h2 className="max-w-2xl text-balance font-serif text-4xl leading-tight md:text-5xl lg:text-6xl">
               Projetos realizados em Goiânia e região.
             </h2>
-          </div>
-
-          <div className="flex flex-wrap gap-2">
-            {cats.map((c) => (
-              <button
-                key={c}
-                onClick={() => setActive(c)}
-                className={cn(
-                  "border px-4 py-2 text-xs uppercase tracking-[0.2em] transition-all",
-                  active === c
-                    ? "border-foreground bg-foreground text-background"
-                    : "border-border text-foreground/70 hover:border-foreground hover:text-foreground"
-                )}
-              >
-                {c}
-              </button>
-            ))}
           </div>
         </div>
 
