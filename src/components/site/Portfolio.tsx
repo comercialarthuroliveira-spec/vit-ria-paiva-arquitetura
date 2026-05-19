@@ -70,9 +70,8 @@ export const Portfolio = () => {
                   className="image-zoom w-full object-cover"
                 />
               </div>
-              <figcaption className="mt-4 flex items-baseline justify-between">
+              <figcaption className="mt-4">
                 <h3 className="font-serif text-xl md:text-2xl">{p.title}</h3>
-                <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">{p.cat}</span>
               </figcaption>
             </figure>
           ))}
