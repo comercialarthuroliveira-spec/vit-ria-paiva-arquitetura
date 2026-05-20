@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { useState } from "react";
 import gramado1 from "@/assets/portfolio-gramado-1.jpg";
 import gramado2 from "@/assets/portfolio-gramado-2.jpg";
 import gramado3 from "@/assets/portfolio-gramado-3.jpg";
@@ -42,7 +42,8 @@ const projects: { src: string; title: string; cat: Exclude<Cat, "Todos">; tall?:
 ];
 
 export const Portfolio = () => {
-  const list = projects;
+  const [expanded, setExpanded] = useState(false);
+  const MOBILE_LIMIT = 4;
 
   return (
     <section id="portfolio" className="bg-background py-28 md:py-40">
@@ -57,15 +58,18 @@ export const Portfolio = () => {
         </div>
 
         <div className="mt-16 columns-1 gap-6 md:columns-2 lg:columns-3 lg:gap-8">
-          {list.map((p) => (
+          {projects.map((p, i) => (
             <figure
               key={p.title}
-              className="group mb-6 break-inside-avoid overflow-hidden lg:mb-8"
+              className={cn(
+                "group mb-6 break-inside-avoid overflow-hidden lg:mb-8",
+                !expanded && i >= MOBILE_LIMIT && "hidden md:block"
+              )}
             >
               <div className="relative overflow-hidden bg-muted">
                 <img
                   src={p.src}
-                  alt={`${p.title} — projeto de ${p.cat.toLowerCase()} em Goiânia`}
+                  alt={`${p.title} — projeto de ${p.cat.toLowerCase()} em Goiânia por Vitória Paiva Arquitetura`}
                   loading="lazy"
                   className="image-zoom w-full object-cover"
                 />
@@ -76,6 +80,18 @@ export const Portfolio = () => {
             </figure>
           ))}
         </div>
+
+        {!expanded && (
+          <div className="mt-10 flex justify-center md:hidden">
+            <button
+              onClick={() => setExpanded(true)}
+              className="group inline-flex items-center gap-3 border border-foreground bg-background px-8 py-4 text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
+            >
+              Ver mais projetos
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </button>
+          </div>
+        )}
 
         <p className="mt-16 text-center text-sm italic text-muted-foreground">
           Projetos realizados em Goiânia e região.
