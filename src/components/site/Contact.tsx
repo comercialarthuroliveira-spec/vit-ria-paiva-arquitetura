@@ -1,6 +1,7 @@
 const WHATSAPP = "https://wa.me/5562984287873?text=Ol%C3%A1%20Vit%C3%B3ria%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20arquitetura.";
 const INSTAGRAM = "https://www.instagram.com/vitoryapaivaarquitetura/";
 const INSTAGRAM_HANDLE = "@vitoryapaivaarquitetura";
+const CNPJ = "00.000.000/0001-00";
 
 export const Contact = () => {
   return (

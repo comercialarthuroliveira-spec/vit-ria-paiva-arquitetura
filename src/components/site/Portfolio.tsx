@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 import gramado1 from "@/assets/portfolio-gramado-1.jpg";
 import gramado2 from "@/assets/portfolio-gramado-2.jpg";
 import gramado3 from "@/assets/portfolio-gramado-3.jpg";
